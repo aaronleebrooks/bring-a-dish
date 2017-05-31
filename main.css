@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+#ingredients-form {
+	text-align: center;
+}
+
+#user-ingredients {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.results {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.recipe-card {
+	width: 250px;
+	margin: 25px auto;
+	background-color: green;
+}
+
+.recipe-card a {
+	text-decoration: none;
+	color: black;
+}
+
+.recipe-card h2 {
+ 	text-align: center;
+}
+
+.recipe-card p {
+ 	margin-left: 20px;
+}
+
+.recipe-image {
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+	max-height: 100%;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-button {
+	width: 15%;
+}
