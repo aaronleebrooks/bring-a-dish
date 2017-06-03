@@ -16,15 +16,16 @@ h1 {
 	margin: 0 auto;
 }
 
-.results {
+#results {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
 .recipe-card {
-	width: 275px;
-	margin: 20px auto;
+	width: 265px;
+	margin: 20px;
+	padding: 10px;
 	background-color: green;
 }
 
@@ -44,8 +45,8 @@ h1 {
 .recipe-image {
 	display: block;
 	margin: 0 auto;
-	width: 95%;
-	max-height: 100%;
+	max-width: 95%;
+	max-height: 200px;
 }
 
 .navigation {
