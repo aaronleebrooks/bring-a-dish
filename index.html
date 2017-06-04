@@ -5,25 +5,21 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h1>BringADish</h1>
-	<main>
+	<header class="middle">
+		<h1>BringADish</h1>
 		<form action="api-endpoint" method="GET" id="ingredients-form">
-		    <label for="user-ingredients">List your ingredients below! Put commas after each item</label>
+		    <label for="user-ingredients">List your ingredients below!</label>
 		    <input type="text" id="user-ingredients"/>
+		    <input type="submit" id="submit" value="Go!">
 		</form>
-			<div id="results">
-
-			</div>
-
-			<div class="navigation">
-					<button class="nav-button back">Back</button>
-					<button class="nav-button next">Next</button>
-			</div>
-
- 		</main>
+	</header>
+	<main>
+		<div id="results">
+		</div>
+ 	</main>
 </div>
 <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="index.js"></script>

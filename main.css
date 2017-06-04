@@ -6,6 +6,11 @@ h1 {
 	text-align: center;
 }
 
+.middle {
+	display: block;
+	margin-top: 30%;
+}
+
 #ingredients-form {
 	text-align: center;
 }
