@@ -37,18 +37,14 @@ function testCallback (data) {
 		var RECIPE_JSON_IMAGE = data[i].image;
 		var RECIPE_JSON_TITLE = data[i].title;
 		var RECIPE_JSON_MISSED = data[i].missedIngredientCount;
-		var RECIPE_JSON_USED = data[i].usedIngredientCount;;
+		var RECIPE_JSON_USED = data[i].usedIngredientCount;
 		displayRecipeTiles();
-		displaySummary(getSummaryFromApi(RECIPE_JSON_ID, pushSummary));
+		getSummaryFromApi(RECIPE_JSON_ID, pushSummary);
 		changeRecipeLink(RECIPE_JSON_ID, RECIPE_JSON_IMAGE);
 		changeRecipeImage(RECIPE_JSON_IMAGE);
 		changeRecipeTitle(RECIPE_JSON_TITLE);
 		changeRecipeSupplies(RECIPE_JSON_USED, RECIPE_JSON_MISSED);
 	};
-	for (var i = 0; i<RESULT_DESCRIPTION_ARRAY.length; i++) {
-		console.log(RESULT_DESCRIPTION_ARRAY[i])
-		$('.recipe-desc').append(RESULT_DESCRIPTION_ARRAY[i]);
-	}
 }
 
 function changeRecipeTitle(data) {
@@ -80,14 +76,14 @@ function changeRecipeSupplies(data1, data2) {
 	$('.recipe-supplies').text(missingIngredients)
 }
 
-function pushSummary(data) {
-	console.log(data);
-	return data.summary;
-};
-
-function displaySummary(array) {
-	$('.recipe-desc').append(array);
+function displaySummary(data) {
+	$('.recipe-supplies').removeData().append('<p>' + data + '<p>');
 }
+
+function pushSummary(data) {
+	console.log (data.summary)
+	displaySummary(data.summary);
+};
 
 function displayRecipeTiles() {
 	$('#results').append(RESULT_RECIPE_TEMPLATE);
