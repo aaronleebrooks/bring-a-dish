@@ -1,6 +1,15 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Capriola', sans-serif;
 }
+
+body {
+	background-image: url("http://images.huffingtonpost.com/2015-03-27-1427496203-1352796-bigstockWoodenspoonandingredientso76325474.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	max-width: 100%;
+
+}	
 
 h1 {
 	text-align: center;
