@@ -1,23 +1,28 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Capriola', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 }
 
-body {
-	background-image: url("http://images.huffingtonpost.com/2015-03-27-1427496203-1352796-bigstockWoodenspoonandingredientso76325474.jpg");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	max-width: 100%;
-
+html {
+	background: url("http://i.imgur.com/68lLd7c.jpg") no-repeat center center fixed;
+	background-blend-mode: lighten;
+	background-size: cover;
 }	
 
 h1 {
+	display: block;
 	text-align: center;
+	color: #ffc700;
+	margin: 15px auto;
+	text-shadow: -2px 2px black, 2px 2px black, -2px -2px black, 2px -2px black;
+	font-family: 'Holtwood One SC', serif;
+
 }
 
 .middle {
 	display: block;
-	margin-top: 30%;
+	margin-top: 25%;
+	font-size: 25px;
 }
 
 #ingredients-form {
@@ -25,9 +30,26 @@ h1 {
 }
 
 #user-ingredients {
+	line-height: normal;
 	display: block;
 	width: 75%;
+	font-size: 20px;
 	margin: 0 auto;
+}
+
+.input-button {
+	color: black;
+	font-size: 20px;
+	margin-top: 10px;
+	background-color: #ffc700;
+	border: 3px double black;
+  	border-top-color: black;
+  	border-left-color: black;
+}
+
+.input-button:hover {
+	background-color: #dbab00;
+	cursor: pointer;
 }
 
 #results {
@@ -40,7 +62,8 @@ h1 {
 	width: 265px;
 	margin: 20px;
 	padding: 10px;
-	background-color: green;
+	background-color: #ffdc63;
+	border-radius: 10px;
 }
 
 .recipe-card a {
@@ -57,17 +80,14 @@ h1 {
 }
 
 .recipe-image {
+	border: 2px solid black;
 	display: block;
 	margin: 0 auto;
-	max-width: 95%;
-	max-height: 200px;
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
 
-.navigation {
-	display: flex;
-	justify-content: center;
-}
-
-.nav-button {
-	width: 15%;
+.recipe-supplies {
+	text-align: center;
 }

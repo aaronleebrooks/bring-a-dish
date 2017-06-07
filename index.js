@@ -1,16 +1,5 @@
 var SPOONACULAR_SEARCH_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?mashape-key=UpJfS3A3qYmsh0NUiMRjpeYL21Cbp1VPxEgjsnAG81P2m5DHAR'
 var SPOONACULAR_DESCRIPTIONS_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/{id}/summary?mashape-key=UpJfS3A3qYmsh0NUiMRjpeYL21Cbp1VPxEgjsnAG81P2m5DHAR'
-var RESULT_RECIPE_TEMPLATE = (
-	 '<figure class="recipe-card">' +
-		'<a href="" class="recipe-link">'+
-			'<h2 class="recipe-title"></h2>' +
-			'<img src="thissource.com" alt="" class="recipe-image"/>' +
-			'<figcaption class="recipe-desc">' +
-				'<p class="recipe-supplies"></p>' +
-			'</figcaption>'+
-        '</a>'+
-    '</figure>'
-);
 
 function getDataFromApi(searchTerm, callback) {
   var query = {
@@ -85,7 +74,7 @@ function changeRecipeLink(data, data2) {
 function changeRecipeSupplies(data1, data2) {
 	console.log(data2)
 	console.log(data1 + '/' + (data1+data2))
-	var missingIngredients = data1 + '/' + (data1+data2);
+	var missingIngredients =data1 + ' of ' + (data1+data2) + ' ingredients!';
 	return missingIngredients;
 }
 
