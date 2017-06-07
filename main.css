@@ -4,7 +4,7 @@
 }
 
 html {
-	background: url("http://i.imgur.com/68lLd7c.jpg") no-repeat center center fixed;
+	background: url("https://i.imgur.com/68lLd7c.jpg") no-repeat center center fixed;
 	background-blend-mode: lighten;
 	background-size: cover;
 }	
@@ -30,7 +30,6 @@ h1 {
 }
 
 #user-ingredients {
-	line-height: normal;
 	display: block;
 	width: 75%;
 	font-size: 20px;

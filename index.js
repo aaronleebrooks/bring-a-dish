@@ -14,14 +14,18 @@ function getDataFromApi(searchTerm, callback) {
 
 function getSummaryFromApi(searchTerm) {
  	var query = SPOONACULAR_DESCRIPTIONS_URL.replace('{id}', searchTerm)
-	return $.getJSON(query, function(data){
+	$.getJSON(query, function(data){
 		console.log(data.summary);
-		return data.summary;
+		var rawSummary = data.summary
+		var newSummary = rawSummary.slice(0, 200);
+		$('#' + data.id + ' .recipe-desc').html(newSummary + '...');
 	});
 }
 
 function testCallback (data) {
 	console.log(data);
+
+
 	for (var i = 0; i < data.length; i++) {
 
 		var RECIPE_JSON_ID = data[i].id;
@@ -30,18 +34,19 @@ function testCallback (data) {
 		var RECIPE_JSON_MISSED = data[i].missedIngredientCount;
 		var RECIPE_JSON_USED = data[i].usedIngredientCount;
 		var RESULT_RECIPE_TEMPLATE = (
-			 '<figure class="recipe-card">' +
+			 '<figure class="recipe-card" id="'+data[i].id+'">' + //added id to tile
 				'<a href='+changeRecipeLink(RECIPE_JSON_ID, RECIPE_JSON_IMAGE)+' class="recipe-link">'+
 					'<h2 class="recipe-title">'+RECIPE_JSON_TITLE+'</h2>' +
 					'<img src='+RECIPE_JSON_IMAGE+' alt="" class="recipe-image"/>' +
-					'<figcaption class="recipe-desc">' +
+					'<figcaption class="recipe-description">' +
 						'<p class="recipe-supplies">'+changeRecipeSupplies(RECIPE_JSON_USED, RECIPE_JSON_MISSED)+'</p>' +
-						'<p class="recipe-desc">'+getSummaryFromApi(RECIPE_JSON_ID)+'</p>' +
+						'<p class="recipe-desc"></p>' +
 					'</figcaption>'+
 		        '</a>'+
 		    '</figure>'
 		   );
 		   displayRecipeTiles(RESULT_RECIPE_TEMPLATE);
+		   getSummaryFromApi(data[i].id);
 	};
 }
 
