@@ -8,7 +8,7 @@
 
 The results page can be seen below. You can see the search field, as well as the recipe tiles.
 
-![Screenshot](https://bring-a-dish/Screenshot.PNG/?raw=true)
+![screenshot](https://user-images.githubusercontent.com/28680766/26909792-2c82a794-4bd1-11e7-91db-c2b49154a4e8.PNG)
 
 Each recipe tile is a link to the recipe, shows a brief description, as well as how many ingredients you have versus how many you are missing.
 
