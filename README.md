@@ -8,7 +8,7 @@
 
 The results page can be seen below. You can see the search field, as well as the recipe tiles.
 
-![Alt text](/bring-a-dish/Screenshot.PNG/ "Screenshot")
+![Screenshot](https://bring-a-dish/Screenshot.PNG/?raw=true)
 
 Each recipe tile is a link to the recipe, shows a brief description, as well as how many ingredients you have versus how many you are missing.
 
