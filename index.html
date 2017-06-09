@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>BringADish - Recipe Locator</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Holtwood+One+SC" rel="stylesheet">
 </head>
-<body>
-	<header class="middle">
-		<h1>Bring a Dish</h1>
-		<form action="api-endpoint" method="GET" id="ingredients-form">
-		    <input type="text" id="user-ingredients" placeholder="List the ingredients you have here!" />
-		    <input type="submit" id="submit" value="Find Recipes! " class="input-button">
-		</form>
-	</header>
-	<main>
-		<div id="results">
-		</div>
- 	</main>
-</div>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="index.js"></script>
-</body>
+	<body>
+		<header class="middle" role="search header">
+			<h1>Bring a Dish</h1>
+			<form action="api-endpoint" method="GET" id="ingredients-form">
+		    	<input type="text" id="user-ingredients" placeholder="List the ingredients you have here!" label="Ingredient Search Bar"/>
+		   	 	<input type="submit" id="submit" value="Find Recipes! " class="input-button">
+			</form>
+		</header>
+		<main role="results">
+			<div id="results">
+			</div>
+ 		</main>
+		<script
+	  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  	crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
