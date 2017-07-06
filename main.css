@@ -23,13 +23,14 @@ h3 {
 	text-align: center;
 	color: #ffc700;
 	margin: 5px auto;
+	margin-bottom: 20px;
 	text-shadow: -1px 1px black, 1px 1px black, -1px -1px black, 1px -1px black;
 	font-size: 25px;
 }
 
 .middle {
 	display: block;
-	margin-top: 25%;
+	margin-top: 20%;
 	font-size: 25px;
 }
 
@@ -47,7 +48,7 @@ h3 {
 .input-button {
 	color: black;
 	font-size: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 	background-color: #ffc700;
 	border: 3px double black;
   	border-top-color: black;
@@ -87,12 +88,12 @@ h3 {
 }
 
 .recipe-image {
-	border: 2px solid black;
+	border: 2px solid black;
 	display: block;
 	margin: 0 auto;
     position: relative;
     width: 85%;
-    height: 200px;
+    height: 200px;
 }
 
 .recipe-supplies {
