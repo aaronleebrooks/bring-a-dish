@@ -53,6 +53,7 @@ h3 {
 	border: 3px double black;
   	border-top-color: black;
   	border-left-color: black;
+	margin-bottom: 10px;
 }
 
 .input-button:hover {
