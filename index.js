@@ -1,7 +1,7 @@
 //Search Recipes by Ingredient Endpoint
-var SPOONACULAR_SEARCH_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?mashape-key=UpJfS3A3qYmsh0NUiMRjpeYL21Cbp1VPxEgjsnAG81P2m5DHAR'
+var SPOONACULAR_SEARCH_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?mashape-key=RcMdQDV9U0mshktDAqIM5YxhrNowp1bWyNDjsnqZuYkWjDIUYj'
 //Search Recipe Summary by Recipe ID Endpoint
-var SPOONACULAR_DESCRIPTIONS_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/{id}/summary?mashape-key=UpJfS3A3qYmsh0NUiMRjpeYL21Cbp1VPxEgjsnAG81P2m5DHAR'
+var SPOONACULAR_DESCRIPTIONS_URL = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/{id}/summary?mashape-key=RcMdQDV9U0mshktDAqIM5YxhrNowp1bWyNDjsnqZuYkWjDIUYj'
 
 //getting the recipes based on the user's ingredients
 const getDataFromApi = function(searchTerm, callback) {
